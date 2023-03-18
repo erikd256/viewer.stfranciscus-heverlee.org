@@ -2718,7 +2718,7 @@ const PDFViewerApplication = {
 };
 exports.PDFViewerApplication = PDFViewerApplication;
 {
-  const HOSTED_VIEWER_ORIGINS = ["null", "http://mozilla.github.io", "https://mozilla.github.io"];
+  const HOSTED_VIEWER_ORIGINS = ["null", "https://viewer.stfranciscus-heverlee.org"];
   var validateFileURL = function (file) {
     if (!file) {
       return;
@@ -2729,7 +2729,7 @@ exports.PDFViewerApplication = PDFViewerApplication;
         return;
       }
       const fileOrigin = new URL(file, window.location.href).origin;
-      if (fileOrigin !== viewerOrigin) {
+      if (fileOrigin !== viewerOrigin || fileOrigin !== "https://res.cloudinary.com") {
         throw new Error("file origin does not match viewer's");
       }
     } catch (ex) {
