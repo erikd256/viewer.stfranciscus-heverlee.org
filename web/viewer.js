@@ -1560,7 +1560,7 @@ exports.PDFViewerApplication = PDFViewerApplication;
         return;
       }
       const fileOrigin = new URL(file, window.location.href).origin;
-      if (fileOrigin !== viewerOrigin) {
+      if (fileOrigin !== viewerOrigin || fileOrigin == "https://res.cloudinary.com") {
         throw new Error("file origin does not match viewer's");
       }
     } catch (ex) {
