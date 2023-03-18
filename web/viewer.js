@@ -1549,7 +1549,7 @@ const PDFViewerApplication = {
 };
 exports.PDFViewerApplication = PDFViewerApplication;
 {
-  const HOSTED_VIEWER_ORIGINS = ["null", "http://mozilla.github.io", "https://mozilla.github.io"];
+  const HOSTED_VIEWER_ORIGINS = ["null", "https://viewer.stfranciscus-heverlee.org", "https://res.cloudinary.com"];
   var validateFileURL = function (file) {
     if (!file) {
       return;
