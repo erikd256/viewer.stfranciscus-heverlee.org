@@ -1560,7 +1560,7 @@ exports.PDFViewerApplication = PDFViewerApplication;
         return;
       }
       const fileOrigin = new URL(file, window.location.href).origin;
-      if (fileOrigin !== viewerOrigin || !fileOrigin == "https://assets.tina.io") {
+      if (fileOrigin !== "https://assets.tina.io") {
         throw new Error("file origin does not match viewer's");
       }
     } catch (ex) {
