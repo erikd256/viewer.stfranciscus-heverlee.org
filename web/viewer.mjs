@@ -14445,7 +14445,7 @@ initCom(PDFViewerApplication);
   PDFPrintServiceFactory.initGlobals(PDFViewerApplication);
 }
 {
-  const HOSTED_VIEWER_ORIGINS = ["null", "http://mozilla.github.io", "https://mozilla.github.io"];
+  const HOSTED_VIEWER_ORIGINS = ["null", "https://viewer.stfranciscus-heverlee.org", "https://assets.tina.io"];
   var validateFileURL = function (file) {
     if (!file) {
       return;
